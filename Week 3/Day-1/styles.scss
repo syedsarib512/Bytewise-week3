@@ -1,0 +1,121 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+// Variables
+$primary-color: #007bff;
+$secondary-color: #28a745;
+$background-color: #f8f9fa;
+$container-bg: #ffffff;
+$section-bg: #f1f1f1;
+$text-color: #495057;
+$header-color: #343a40;
+$subtext-color: #6c757d;
+$border-color: #e9ecef;
+$font-family: 'Roboto', Arial, sans-serif;
+$shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+
+// Mixins
+@mixin box-shadow($shadow) {
+    -webkit-box-shadow: $shadow;
+    -moz-box-shadow: $shadow;
+    box-shadow: $shadow;
+}
+
+@mixin border-radius($radius) {
+    -webkit-border-radius: $radius;
+    -moz-border-radius: $radius;
+    border-radius: $radius;
+}
+
+@mixin transition($transition) {
+    -webkit-transition: $transition;
+    -moz-transition: $transition;
+    -ms-transition: $transition;
+    -o-transition: $transition;
+    transition: $transition;
+}
+
+// Global styles
+body {
+    font-family: $font-family;
+    line-height: 1.6;
+    background-color: $background-color;
+    padding: 20px;
+    margin: 0;
+}
+
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    background-color: $container-bg;
+    padding: 20px;
+    @include border-radius(8px);
+    @include box-shadow($shadow);
+}
+
+header {
+    text-align: center;
+    margin-bottom: 30px;
+
+    h1 {
+        color: $header-color;
+        margin-bottom: 10px;
+    }
+
+    p {
+        color: $subtext-color;
+    }
+}
+
+.section {
+    padding: 20px;
+    background-color: $section-bg;
+    @include border-radius(8px);
+    margin-bottom: 20px;
+    border-left: 5px solid $primary-color;
+
+    h2 {
+        margin-bottom: 15px;
+        color: $primary-color;
+        border-bottom: 2px solid $border-color;
+        padding-bottom: 5px;
+    }
+
+    .content {
+        margin-top: 10px;
+        color: $text-color;
+
+        .highlight {
+            font-weight: bold;
+            color: $secondary-color;
+        }
+
+        .player-list {
+            list-style-type: none;
+            padding: 0;
+            margin-top: 10px;
+
+            li {
+                margin-bottom: 10px;
+                color: $text-color;
+            }
+        }
+    }
+}
+
+footer {
+    text-align: center;
+    margin-top: 30px;
+    color: $subtext-color;
+    font-size: 0.9em;
+}
+
+// Media Queries for Responsive Design
+@media (max-width: 600px) {
+    .container {
+        padding: 15px;
+    }
+
+    .section {
+        padding: 15px;
+    }
+}

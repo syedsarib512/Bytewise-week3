@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Modern Web Development</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body class="bg-gray-100 font-sans leading-normal tracking-normal">
+    <header class="bg-white shadow-lg">
+        <div class="container mx-auto flex justify-between items-center p-6">
+            <h1 class="text-4xl font-bold text-blue-600">Modern Web Development</h1>
+            <nav>
+                <ul class="flex space-x-4">
+                    <li><a href="#" class="text-gray-700 hover:text-blue-600">Home</a></li>
+                    <li><a href="#about" class="text-gray-700 hover:text-blue-600">About</a></li>
+                    <li><a href="#services" class="text-gray-700 hover:text-blue-600">Services</a></li>
+                    <li><a href="#contact" class="text-gray-700 hover:text-blue-600">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main class="container mx-auto my-8 p-6 bg-white shadow rounded">
+        <section id="about" class="mb-12">
+            <h2 class="text-3xl font-semibold text-blue-600 mb-4">About Modern Web Development</h2>
+            <p class="text-gray-700 leading-loose">
+                Modern web development involves creating interactive, responsive, and visually appealing websites and web applications. It leverages the latest technologies, frameworks, and best practices to build user-friendly and efficient web experiences.
+            </p>
+            <p class="text-gray-700 leading-loose mt-4">
+                Technologies commonly used in modern web development include HTML, CSS, JavaScript, and various frameworks such as React, Vue, and Angular. Additionally, tools like Tailwind CSS, which is a utility-first CSS framework, make styling more efficient and enjoyable.
+            </p>
+        </section>
+
+        <section id="services" class="mb-12">
+            <h2 class="text-3xl font-semibold text-blue-600 mb-4">Our Services</h2>
+            <div class="grid md:grid-cols-3 gap-6">
+                <div class="p-6 bg-gray-100 rounded shadow-lg">
+                    <h3 class="text-2xl font-semibold text-gray-800 mb-2">Responsive Design</h3>
+                    <p class="text-gray-600">Creating web designs that work seamlessly across various devices and screen sizes, providing an optimal user experience on desktops, tablets, and mobile devices.</p>
+                </div>
+                <div class="p-6 bg-gray-100 rounded shadow-lg">
+                    <h3 class="text-2xl font-semibold text-gray-800 mb-2">Front-End Development</h3>
+                    <p class="text-gray-600">Building the client-side of websites and web applications using modern JavaScript frameworks like React, Vue, and Angular, ensuring a dynamic and engaging user interface.</p>
+                </div>
+                <div class="p-6 bg-gray-100 rounded shadow-lg">
+                    <h3 class="text-2xl font-semibold text-gray-800 mb-2">Back-End Development</h3>
+                    <p class="text-gray-600">Developing robust and scalable server-side applications using technologies such as Node.js, Django, and Ruby on Rails, ensuring seamless data management and security.</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="contact">
+            <h2 class="text-3xl font-semibold text-blue-600 mb-4">Get in Touch</h2>
+            <form class="space-y-4">
+                <div>
+                    <label for="name" class="block text-gray-700">Name</label>
+                    <input type="text" id="name" class="w-full border-gray-300 rounded p-2" placeholder="Your Name">
+                </div>
+                <div>
+                    <label for="email" class="block text-gray-700">Email</label>
+                    <input type="email" id="email" class="w-full border-gray-300 rounded p-2" placeholder="Your Email">
+                </div>
+                <div>
+                    <label for="message" class="block text-gray-700">Message</label>
+                    <textarea id="message" class="w-full border-gray-300 rounded p-2" rows="4" placeholder="Your Message"></textarea>
+                </div>
+                <button type="submit" class="bg-blue-600 text-white rounded p-2 hover:bg-blue-700">Submit</button>
+            </form>
+        </section>
+    </main>
+
+    <footer class="bg-gray-800 text-white text-center p-6 mt-12">
+        <p>&copy; 2024 Modern Web Development. All rights reserved.</p>
+    </footer>
+</body>
+</html>
